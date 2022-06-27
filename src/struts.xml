@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        
+        <action name="adminAdd" class="adminAction" method="adminAdd">
+        </action>
+        <action name="adminDel" class="adminAction" method="adminDel">
+        </action>
+        <action name="adminMana" class="adminAction" method="adminMana">
+            <result name="success">/admin/index/adminMana.jsp</result>
+        </action>
+        
+        
+        <action name="leixingAdd" class="leixingAction" method="leixingAdd">
+        </action>
+        <action name="leixingUpd" class="leixingAction" method="leixingUpd">
+        </action>
+        <action name="leixingDel" class="leixingAction" method="leixingDel">
+        </action>
+        <action name="leixingMana" class="leixingAction" method="leixingMana">
+            <result name="success">/admin/leixing/lxMana.jsp</result>
+        </action>
+        
+        <action name="toJieyong" class="shebieAction" method="toJieyong">
+        	<result name="toJieyong">/admin/shenqing/jysq.jsp</result>
+        </action>
+        <action name="toAddShebei" class="shebieAction" method="toAddShebei">
+        	<result name="toAdd">/admin/shebei/sbAdd.jsp</result>
+        </action>
+        <action name="shebeiAdd" class="shebieAction" method="shebeiAdd">
+        </action>
+        <action name="toEditShebei" class="shebieAction" method="toEditShebei">
+        	<result name="toEdit">/admin/shebei/sbEditPre.jsp</result>
+        </action>
+        <action name="shebeiUpd" class="shebieAction" method="shebeiUpd">
+        </action>
+        <action name="shebeiDel" class="shebieAction" method="shebeiDel">
+        </action>
+        <action name="shebeiMana" class="shebieAction" method="shebeiMana">
+        	<result name="success">/admin/shebei/sbMana.jsp</result>
+        </action>
+        <action name="shebeiQuery" class="shebieAction" method="shebeiQuery">
+        	<result name="shebeiQuery">/admin/shebei/sbQuery.jsp</result>
+        </action>
+        
+		<action name="xueshengAdd" class="xueshengAction" method="xueshengAdd">
+        </action>
+		<action name="xueshengMana" class="xueshengAction" method="xueshengMana">
+			<result name="success">/admin/yonghu/yhMana.jsp</result>
+        </action>
+		<action name="ztChange" class="xueshengAction" method="ztChange">
+        </action>
+		<action name="pwChange" class="xueshengAction" method="pwChange">
+        </action>                
+
+        <action name="jieyongHis" class="jieyongAction" method="jieyongHis">
+        	<result name="success">/admin/jieyong/jieyongHis.jsp</result>
+        </action>
+        <action name="toGuihuanMana" class="jieyongAction" method="toGuihuanMana">
+        	<result name="toGuihuanMana">/admin/jieyong/guihuanMana.jsp</result>
+        </action>
+        <action name="toGuihuan" class="jieyongAction" method="toGuihuan">
+        	<result name="toGuihuan">/admin/jieyong/toGuihuan.jsp</result>
+        </action>
+        <action name="jydjList" class="jieyongAction" method="jydjList">
+        	<result name="toJydj">/admin/jieyong/jydjList.jsp</result>
+        </action>
+        <action name="jydjAdd" class="jieyongAction" method="jydjAdd">
+        </action>
+        <action name="guihuanAdd" class="jieyongAction" method="guihuanAdd">
+        </action>
+        
+        <action name="toWeixiuMana" class="weixiuAction" method="toWeixiuMana">
+        	<result name="success">/admin/weixiu/wxMana.jsp</result>
+        </action>
+        <action name="toWeixiuAdd" class="weixiuAction" method="toWeixiuAdd">
+        	<result name="toWeixiuAdd">/admin/weixiu/wxAdd.jsp</result>
+        </action>
+        <action name="weixiuDetail" class="weixiuAction" method="weixiuDetail">
+        	<result name="toDetail">/admin/weixiu/wxDetail.jsp</result>
+        </action>
+        <action name="weixiuUpd" class="weixiuAction" method="weixiuUpd">
+        </action>
+        
+        <action name="shenqingAdd" class="shenqingAction" method="shenqingAdd">
+        </action>        
+        <action name="shenqingList" class="shenqingAction" method="shenqingList">
+        	<result name="sqList">/admin/shenqing/sqList.jsp</result>
+        </action>
+        <action name="toShenhe" class="shenqingAction" method="toShenhe">
+        	<result name="toShenhe">/admin/shenqing/sheheList.jsp</result>
+        </action>              
+        <action name="toShenpi" class="shenqingAction" method="toShenpi">
+        	<result name="toShenpi">/admin/shenqing/toShenpi.jsp</result>
+        </action>
+        <action name="shenpiAdd" class="shenqingAction" method="shenpiAdd">
+        </action>                     
+    </package>
+</struts>
